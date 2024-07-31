@@ -13,3 +13,7 @@ def home():
 @app.route("/ingreso/<id>")
 def ingreso(id):
     return f"Ingreso {id}"
+
+@app.route("/home/<name>")
+def home2(name):
+    return f"Bienvenido {name}"
